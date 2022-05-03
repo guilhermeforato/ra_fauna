@@ -1,0 +1,835 @@
+fileFormatVersion: 2
+guid: c6be34fd65115f6408786f171fe6c868
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 645411862609229670
+    second: Amazonas
+  - first:
+      213: -3276122099754389042
+    second: Para
+  - first:
+      213: -135665275369439952
+    second: Bahia
+  - first:
+      213: 6732742066884364779
+    second: Sergipe
+  - first:
+      213: -7324858090283886608
+    second: MatoGrosso
+  - first:
+      213: 4945718543514210754
+    second: MinasGerais
+  - first:
+      213: -7516791614127822498
+    second: RioGrandeDoSul
+  - first:
+      213: -172109923268554218
+    second: Maranhao
+  - first:
+      213: -7902874161665819209
+    second: Ceara
+  - first:
+      213: -1382599404536372767
+    second: RioDeJaneiro
+  - first:
+      213: -1703855962273834177
+    second: RioGrandeDoNorte
+  - first:
+      213: 943897181365695813
+    second: Piaui
+  - first:
+      213: -5247471291593165273
+    second: Tocantins
+  - first:
+      213: -5638046861314674359
+    second: SaoPaulo
+  - first:
+      213: -2411617240929303042
+    second: MatoGrossoDoSul
+  - first:
+      213: 7254830028836282046
+    second: Goias
+  - first:
+      213: 2320237665067697772
+    second: EspiritoSanto
+  - first:
+      213: -9024062157296624422
+    second: Alagoas
+  - first:
+      213: 4850156979965651710
+    second: Acre
+  - first:
+      213: 8792265869481431602
+    second: Rondonia
+  - first:
+      213: -4568697809530194781
+    second: Roraima
+  - first:
+      213: 1593215189244636201
+    second: Amapa
+  - first:
+      213: 8573059855525071730
+    second: SantaCatarina
+  - first:
+      213: 7425192431115120889
+    second: Paraiba
+  - first:
+      213: -4172028848623372801
+    second: Pernambuco
+  - first:
+      213: -1056934510162341840
+    second: Parana
+  - first:
+      213: -2754663757602625610
+    second: Capital
+  - first:
+      213: -2145364280544614572
+    second: Amazonas
+  - first:
+      213: -7759361487684161149
+    second: Para
+  - first:
+      213: -3888327117574300182
+    second: Bahia
+  - first:
+      213: -7524623008526227523
+    second: Maranhao
+  - first:
+      213: 7776852896565746553
+    second: RioGrandeDoNorte
+  - first:
+      213: 7474728253125357055
+    second: MatoGrosso
+  - first:
+      213: 860331887256503999
+    second: Sergipe
+  - first:
+      213: -8858644627702428405
+    second: MatoGrossoDoSul
+  - first:
+      213: 4179868169176919638
+    second: RioGrandeDoSul
+  - first:
+      213: 7590246689143554874
+    second: Ceara
+  - first:
+      213: 3552423187675160797
+    second: EspiritoSanto
+  - first:
+      213: 7263870954132239325
+    second: Alagoas
+  - first:
+      213: -1256734235086954373
+    second: Goias
+  - first:
+      213: -5396500337184282484
+    second: Rondonia
+  - first:
+      213: -7688125041346228734
+    second: Roraima
+  - first:
+      213: -6856085366546452061
+    second: RioDeJaneiro
+  - first:
+      213: -3079968829157388691
+    second: Capital
+  - first:
+      213: 7036765776253224115
+    second: Piaui
+  - first:
+      213: 2823676483597274942
+    second: Tocantins
+  - first:
+      213: 37793140303489256
+    second: Paraiba
+  - first:
+      213: -239363465671755504
+    second: Parana
+  - first:
+      213: -4384544005861437650
+    second: Acre
+  - first:
+      213: 4771947777114612525
+    second: MinasGerais
+  - first:
+      213: -1894117940548770359
+    second: SantaCatarina
+  - first:
+      213: 4256529841040810748
+    second: Amapa
+  - first:
+      213: -7778499472371792709
+    second: SaoPaulo
+  - first:
+      213: -8549954218316181521
+    second: Pernambuco
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Amazonas
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1435
+        width: 864
+        height: 593
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457a350bd822a32e0800000000000000
+      internalID: -2145364280544614572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Para
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1425
+        width: 636
+        height: 617
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3813dba76d5315490800000000000000
+      internalID: -7759361487684161149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bahia
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 1558
+        width: 444
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed177a7613e90ac0800000000000000
+      internalID: -3888327117574300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maranhao
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 1087
+        width: 318
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7201cad3b239790800000000000000
+      internalID: -7524623008526227523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RioGrandeDoNorte
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1437
+        width: 184
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97bd442818eeceb60800000000000000
+      internalID: 7776852896565746553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MatoGrosso
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 893
+        width: 554
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffdec105eb19bb760800000000000000
+      internalID: 7474728253125357055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sergipe
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1301
+        width: 94
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb68dd01b4380fb00800000000000000
+      internalID: 860331887256503999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MatoGrossoDoSul
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 1074
+        width: 355
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0dcf5e65a5cf0580800000000000000
+      internalID: -8858644627702428405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RioGrandeDoSul
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1082
+        width: 392
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ea0c734ffd10a30800000000000000
+      internalID: 4179868169176919638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceara
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 1162
+        width: 196
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a338cff1629f55960800000000000000
+      internalID: 7590246689143554874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EspiritoSanto
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1103
+        width: 106
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd02d31511ebc4130800000000000000
+      internalID: 3552423187675160797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alagoas
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1000
+        width: 150
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3745ba5247ec460800000000000000
+      internalID: 7263870954132239325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goias
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 717
+        width: 358
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70e1942fde2f8ee0800000000000000
+      internalID: -1256734235086954373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rondonia
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 774
+        width: 336
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88ead30987cb15b0800000000000000
+      internalID: -5396500337184282484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roraima
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 730
+        width: 292
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ec5c1220b4e4590800000000000000
+      internalID: -7688125041346228734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RioDeJaneiro
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 902
+        width: 192
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1be392faa4ad0a0800000000000000
+      internalID: -6856085366546452061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capital
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 903
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e4cc21ba0c145d0800000000000000
+      internalID: -3079968829157388691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piaui
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 492
+        width: 271
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4033de03d97a160800000000000000
+      internalID: 7036765776253224115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tocantins
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 484
+        width: 238
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f80752dc6bf2720800000000000000
+      internalID: 2823676483597274942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paraiba
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 775
+        width: 196
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e86cbe29a4468000800000000000000
+      internalID: 37793140303489256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parana
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 502
+        width: 331
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019bd68323c9dacf0800000000000000
+      internalID: -239363465671755504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acre
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 551
+        width: 366
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f8f8cf478f623c0800000000000000
+      internalID: -4384544005861437650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MinasGerais
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 283
+        width: 550
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23a1ad683d593240800000000000000
+      internalID: 4771947777114612525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SantaCatarina
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 303
+        width: 265
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c565eeb4cdb6b5e0800000000000000
+      internalID: -1894117940548770359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Amapa
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 190
+        width: 244
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2661f965b321b30800000000000000
+      internalID: 4256529841040810748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaoPaulo
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 221
+        width: 430
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb447bf21f73d0490800000000000000
+      internalID: -7778499472371792709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pernambuco
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 432
+        width: 325
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef496320f5785980800000000000000
+      internalID: -8549954218316181521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2a93d6a18e6e4934eb2357d3f42ffe4c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
