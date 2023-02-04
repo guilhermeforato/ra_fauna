@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using KetosGames.SceneTransition;
@@ -23,6 +23,7 @@ public class MenuRA : MonoBehaviour
         for (int i = 0; i < jogos.Length; i++) 
         if (jogos[i].transform.GetChild(0).GetChild(0).gameObject.name != MenuContrl.qualJogo)
             jogos[i].SetActive(false);
+            
         print(MenuContrl.qualJogo);
     }
     
@@ -35,6 +36,15 @@ public class MenuRA : MonoBehaviour
         MenuContrl.PlayClick();
     }
     
+    private void Update()
+    {
+        
+    }
+
+    IEnumerator GetCamera(){
+        
+    }
+
     public void ShowHelp()
     {
         if (!Help)
