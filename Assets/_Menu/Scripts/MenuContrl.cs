@@ -34,6 +34,10 @@ public class MenuContrl : MonoBehaviour
     {
         if (GameObject.FindGameObjectWithTag("fxClick")) GameObject.FindGameObjectWithTag("fxClick").GetComponent<AudioSource>().Play();
     }
+
+    public void kkk() {
+        Application.RequestUserAuthorization (UserAuthorization.WebCam);
+    }
     public void test(){
         print(gameObject.name);
     }
