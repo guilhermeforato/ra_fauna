@@ -1,0 +1,4 @@
+@echo off
+rd /s /q "C:\Users\guilh\OneDrive\Documentos\GitHub\ra_fauna\.vscode"
+rd /s /q "C:\caminho\para\a\segunda\pasta"
+rd /s /q "C:\caminho\para\a\terceira\pasta"
