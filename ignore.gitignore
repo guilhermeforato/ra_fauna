@@ -1,0 +1,41 @@
+# Unity generated files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+
+# Unity executables
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+
+# Unity package files
+[Uu]nity[Uu]nityGenerated/
+[Uu]nityPackageManager/
+[Uu]nityPackageManager[Hh]istory/
+[Uu]nityPackageManifests/
+
+# Visual Studio / MonoDevelop generated files
+.vs/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Mm]emoryCaptures/
+[Ll]ibrary/
+[Aa]ssets/Plugins/
+
+# Rider generated files
+.idea/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Exclude specific folders and files
+# Example: Exclude a folder named "IgnoreFolder"
+# /Assets/IgnoreFolder/
