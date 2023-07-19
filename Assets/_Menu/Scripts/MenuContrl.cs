@@ -1,5 +1,4 @@
 ﻿using KetosGames.SceneTransition;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine;
 using System.Collections;
@@ -9,48 +8,75 @@ public class MenuContrl : MonoBehaviour
 {
 
     [SerializeField] CanvasGroup warningPais, mainPlaca, uiConfiguracoes;
-    [SerializeField] Sprite[] spritesToggleSongs;
-    [SerializeField] GameObject configuracoes, capas, jogos;
+    [SerializeField] GameObject configuracoes, capas, jogos, comecarConfig;
     [SerializeField] Image toggleSom, toggleMusica, selectGame;
     [SerializeField] InputField inputTerms;
     public GameObject Fx_Click, sfx_Background;
-    [SerializeField] Text[] txts;
-    [SerializeField] GameObject[] paineis;
-
+    [SerializeField] GameObject[] locaisJogos;
+    [SerializeField] Sprite[] spritesToggleSongs, jogosArara, jogosMacaco, jogosMapa, capasSprites;
     public static string qualCapa, qualJogo = "";
-
     public static bool aceitou_termos = false;
     public static bool som = true;
     public static bool musica = true;
+    public static bool reconheceuCapa = false;
+
     private void Start() => deixarConfiguradoStartGame();
 
     private void deixarConfiguradoStartGame()
     {
         warningPais.gameObject.SetActive(false);
         capas.SetActive(false);
-        jogos.SetActive(false);
+        jogos.SetActive(reconheceuCapa);
         configuracoes.SetActive(false);
         ativaSom();
         configuraStartToggleSongs();
-        if (!aceitou_termos)
+        if (!reconheceuCapa)
         {
-            uiConfiguracoes.DOFade(0, 0);
-            uiConfiguracoes.interactable = false;
-            uiConfiguracoes.blocksRaycasts = false;
-            StartCoroutine(StartWarningPais());
+            if (!aceitou_termos)
+            {
+                uiConfiguracoes.DOFade(0, 0);
+                uiConfiguracoes.interactable = false;
+                uiConfiguracoes.blocksRaycasts = false;
+                StartCoroutine(StartWarningPais());
+            }
+            else
+            {
+                uiConfiguracoes.interactable = true;
+                uiConfiguracoes.blocksRaycasts = true;
+                mainPlaca.gameObject.SetActive(true);
+            }
         }
         else
         {
-            uiConfiguracoes.interactable = true;
-            uiConfiguracoes.blocksRaycasts = true;
-            mainPlaca.gameObject.SetActive(true);
+            mainPlaca.gameObject.SetActive(false);
+            comecarConfig.SetActive(false);
+            setJogos(qualCapa);
         }
+
     }
 
     void configuraStartToggleSongs()
     {
         toggleMusica.sprite = musica ? spritesToggleSongs[1] : spritesToggleSongs[0];
         toggleSom.sprite = som ? spritesToggleSongs[1] : spritesToggleSongs[0];
+    }
+
+    void setJogos(string capa)
+    {
+        switch (int.Parse(capa))
+        {
+            case 0:
+                for (int i = 0; i < locaisJogos.Length; i++) locaisJogos[i].GetComponent<Image>().sprite = jogosMacaco[i];
+                break;
+            case 1:
+                for (int i = 0; i < locaisJogos.Length; i++) locaisJogos[i].GetComponent<Image>().sprite = jogosArara[i];
+                break;
+            case 2:
+                for (int i = 0; i < locaisJogos.Length; i++) locaisJogos[i].GetComponent<Image>().sprite = jogosMapa[i];
+                break;
+            default: break;
+        }
+        selectGame.sprite = capasSprites[int.Parse(qualCapa)];
     }
 
     public void chageSom(Image toggle)
@@ -67,7 +93,8 @@ public class MenuContrl : MonoBehaviour
         musica = !musica;
     }
 
-    public void selectCapa(Image sprite) {
+    public void selectCapa(Image sprite)
+    {
         qualCapa = sprite.name;
         selectGame.sprite = sprite.sprite;
     }
@@ -86,7 +113,7 @@ public class MenuContrl : MonoBehaviour
             if (musica)
                 GameObject.FindGameObjectWithTag("sfxBackground").GetComponent<AudioSource>().DOFade(0, .5f);
             else
-                GameObject.FindGameObjectWithTag("sfxBackground").GetComponent<AudioSource>().DOFade(1, .5f);
+                GameObject.FindGameObjectWithTag("sfxBackground").GetComponent<AudioSource>().DOFade(.5f, .5f);
         }
     }
 
@@ -113,17 +140,25 @@ public class MenuContrl : MonoBehaviour
 
     public void Play(GameObject game)
     {
-        qualJogo = game.name;
-        SceneLoader.LoadScene("Game");
+        if (game.name.ToLower().Contains("capa"))
+        {
+            SceneLoader.LoadScene("Reconhecimento");
+            qualCapa = game.name.Substring(0, 1);
+        }
+        else
+        {
+            SceneLoader.LoadScene("Jogos");
+            qualJogo = game.name.Substring(0, 1);
+        }
     }
 
     public void QuitGame()
     {
-        #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-        #else
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
                     Application.Quit();
-        #endif
+#endif
     }
 
     public void scaleOneObject(GameObject game)

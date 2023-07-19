@@ -18,6 +18,7 @@ public class NumCtrol : MonoBehaviour
     int numRandom;
     void Start()
     {
+        print("começou");
         canvas.gameObject.SetActive(false);
         for (var i = 1; i < 11; i++)
             numeros.Add(i);
