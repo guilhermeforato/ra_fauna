@@ -7,7 +7,7 @@ using DG.Tweening;
 public class MenuContrl : MonoBehaviour
 {
 
-    [SerializeField] CanvasGroup warningPais, mainPlaca, uiConfiguracoes;
+    [SerializeField] CanvasGroup warningPais, mainPlaca, uiConfiguracoes, uiInicial;
     [SerializeField] GameObject configuracoes, capas, jogos, comecarConfig;
     [SerializeField] Image toggleSom, toggleMusica, selectGame;
     [SerializeField] InputField inputTerms;
@@ -25,6 +25,7 @@ public class MenuContrl : MonoBehaviour
     private void deixarConfiguradoStartGame()
     {
         warningPais.gameObject.SetActive(false);
+        uiInicial.gameObject.SetActive(false);
         capas.SetActive(false);
         jogos.SetActive(reconheceuCapa);
         configuracoes.SetActive(false);
@@ -37,7 +38,8 @@ public class MenuContrl : MonoBehaviour
                 uiConfiguracoes.DOFade(0, 0);
                 uiConfiguracoes.interactable = false;
                 uiConfiguracoes.blocksRaycasts = false;
-                StartCoroutine(StartWarningPais());
+                mainPlaca.gameObject.SetActive(false);
+                StartMsgInicial();
             }
             else
             {
@@ -53,6 +55,11 @@ public class MenuContrl : MonoBehaviour
             setJogos(qualCapa);
         }
 
+    }
+
+    public void openWarningPais()
+    {
+        StartCoroutine(StartWarningPais());
     }
 
     void configuraStartToggleSongs()
@@ -133,6 +140,12 @@ public class MenuContrl : MonoBehaviour
         warningPais.transform.DOScale(1, .5f).SetEase(Ease.OutBounce);
     }
 
+    public void StartMsgInicial()
+    {
+        uiInicial.gameObject.SetActive(true);
+        uiInicial.transform.DOScale(1, .5f).SetEase(Ease.OutBounce);
+    }
+
     public static void PlayClick()
     {
         if (GameObject.FindGameObjectWithTag("fxClick")) GameObject.FindGameObjectWithTag("fxClick").GetComponent<AudioSource>().Play();
@@ -174,6 +187,12 @@ public class MenuContrl : MonoBehaviour
         {
             game.transform.localScale = Vector3.zero;
             game.SetActive(false);
+            if (game.transform.parent.parent.GetComponent<CanvasGroup>())
+            {
+                game.transform.parent.parent.GetComponent<CanvasGroup>().DOFade(0, .3f).OnComplete(()=>{
+                    game.transform.parent.parent.gameObject.SetActive(false);
+                });
+            }
         });
     }
 

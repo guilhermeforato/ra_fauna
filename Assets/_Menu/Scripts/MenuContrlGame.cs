@@ -10,7 +10,7 @@ public class MenuContrlGame : MonoBehaviour
     public bool Dev;
     public GameObject Fx_Click, sfx_Background, panelHelp, parabensPrefab, tenteNovamente, correto;
     [HideInInspector] Sprite spriteQualHelp;
-    [SerializeField] Sprite[] spritesToggleSongs;
+    public Sprite[] spritesToggleSongs, spritesAnimaisCapas;
     [SerializeField] GameObject[] pontuacao;
     [HideInInspector] public int contagemPontos;
 
@@ -19,7 +19,7 @@ public class MenuContrlGame : MonoBehaviour
     [SerializeField] Sprite[] helpsMacaco, helpsArara, helpsMapa;
 
     [Header("*** JOGO ARARA #1 ***")]
-    [SerializeField] GameObject numeros;
+    [SerializeField] GameObject numeros, loadAnimais;
     [SerializeField] GameObject[] prefabsAnimais;
     public Transform[] posicoes;
     public int[] numAuxs;
@@ -88,7 +88,7 @@ public class MenuContrlGame : MonoBehaviour
     [SerializeField] GameObject[] fasesJanela, setas;
     [SerializeField] Sprite[] numerosControllerBarco;
     [SerializeField] Sprite[] numerosBarco;
-    public int auxJanelasNext, auxSetas, auxProximaJanela = 0;
+    [HideInInspector] public int auxJanelasNext, auxSetas, auxProximaJanela = 0;
 
     [Header("*** JOGO MAPA #3 ***")]
     [SerializeField] GameObject regionInfo;
@@ -109,7 +109,7 @@ public class MenuContrlGame : MonoBehaviour
         if (Dev)
         {
             MenuContrl.qualCapa = "2";
-            MenuContrl.qualJogo = "1";
+            MenuContrl.qualJogo = "2";
         }
         switch (int.Parse(MenuContrl.qualCapa))
         {
@@ -173,7 +173,7 @@ public class MenuContrlGame : MonoBehaviour
         RandomizeObjects();
         RandomizeIntegers();
         RandomizePositions();
-        randomizaNovosAnimais();
+        StartCoroutine(randomizaNovosAnimais());
     }
 
     private void startJogo2Arara()
@@ -342,18 +342,14 @@ public class MenuContrlGame : MonoBehaviour
             somaContagePontos(1);
             for (int i = 0; i < posicoes.Length; i++)
             {
-                if (posicoes[i].childCount > 0)
-                {
-                    // animacao doscale animais e dps destruir
-                    Destroy(posicoes[i].GetChild(0).gameObject);
-                }
+                if (posicoes[i].childCount > 0) Destroy(posicoes[i].GetChild(0).gameObject);
             }
             sumAcerto++;
 
             RandomizeObjects();
             RandomizePositions();
             if (sumAcerto < 10)
-                randomizaNovosAnimais();
+                StartCoroutine(randomizaNovosAnimais());
             else
             {
                 numeros.SetActive(false);
@@ -361,14 +357,51 @@ public class MenuContrlGame : MonoBehaviour
         }
     }
 
-    public void randomizaNovosAnimais()
+    public IEnumerator randomizaNovosAnimais()
     {
+    volta:
+
+        for (int i = 0; i < posicoes.Length; i++) if (posicoes[i].childCount > 0) Destroy(posicoes[i].GetChild(0).gameObject);
+
+        RandomizeObjects();
+
         for (int i = 0; i < numAuxs[sumAcerto]; i++)
         {
             GameObject game = Instantiate(prefabsAnimais[i]);
             game.transform.SetParent(posicoes[i]);
             game.transform.localPosition = Vector3.zero;
+            game.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 0);
+            game.GetComponent<SpriteRenderer>().sortingOrder = game.transform.parent.GetComponent<SpriteRenderer>().sortingOrder;
         }
+        yield return new WaitForSeconds(.1f);
+
+        if (!conferePosicaoMacaco())
+        {
+            loadAnimais.SetActive(true);
+            goto volta;
+        }
+        else
+        {
+            yield return new WaitForSeconds(.5f);
+            for (int i = 0; i < posicoes.Length; i++) if (posicoes[i].childCount > 0) posicoes[i].GetChild(0).GetComponent<SpriteRenderer>().DOFade(1, .3f);
+            loadAnimais.SetActive(false);
+        }
+
+    }
+
+    bool conferePosicaoMacaco()
+    {
+        bool valid = true;
+        for (int i = 0; i < posicoes.Length; i++)
+        {
+            if (posicoes[i].childCount > 0)
+            {
+                valid = posicoes[i].GetChild(0).tag == posicoes[i].tag;
+                if (!valid) break;
+            }
+        }
+
+        return valid;
     }
 
     private void RandomizeObjects()
