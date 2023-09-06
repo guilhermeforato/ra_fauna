@@ -108,8 +108,8 @@ public class MenuContrlGame : MonoBehaviour
     {
         if (Dev)
         {
-            MenuContrl.qualCapa = "2";
-            MenuContrl.qualJogo = "2";
+            MenuContrl.qualCapa = "1";
+            MenuContrl.qualJogo = "1";
         }
         switch (int.Parse(MenuContrl.qualCapa))
         {
