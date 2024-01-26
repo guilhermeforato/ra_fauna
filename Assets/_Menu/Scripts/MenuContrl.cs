@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using System.Collections;
 using DG.Tweening;
+using TMPro;
 
 public class MenuContrl : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class MenuContrl : MonoBehaviour
     [SerializeField] InputField inputTerms;
     public GameObject Fx_Click, sfx_Background;
     [SerializeField] GameObject[] locaisJogos;
+    public TextMeshProUGUI[] txts;
     [SerializeField] Sprite[] spritesToggleSongs, jogosArara, jogosMacaco, jogosMapa, capasSprites;
     public static string qualCapa, qualJogo = "";
     public static bool aceitou_termos = false;
@@ -189,7 +191,8 @@ public class MenuContrl : MonoBehaviour
             game.SetActive(false);
             if (game.transform.parent.parent.GetComponent<CanvasGroup>())
             {
-                game.transform.parent.parent.GetComponent<CanvasGroup>().DOFade(0, .3f).OnComplete(()=>{
+                game.transform.parent.parent.GetComponent<CanvasGroup>().DOFade(0, .3f).OnComplete(() =>
+                {
                     game.transform.parent.parent.gameObject.SetActive(false);
                 });
             }
@@ -212,27 +215,40 @@ public class MenuContrl : MonoBehaviour
 
     // _________________________ termos de uso _________________________
 
-    // public void GenerateTerms()
-    // {
-    //     for (var i = 0; i < txts.Length; i++) txts[i].text = Random.Range(1, 6).ToString();
-    // }
+    public void GenerateTerms()
+    {
+        for (var i = 0; i < txts.Length; i++) txts[i].text = Random.Range(1, 6).ToString();
+    }
 
-    // public void CheckTerms(GameObject game)
-    // {
-    //     if (inputTerms.text != "")
-    //     {
-    //         int valortotal = int.Parse(txts[0].text) + int.Parse(txts[1].text);
-    //         if (int.Parse(inputTerms.text) == valortotal)
-    //         {
-    //             game.SetActive(false);
-    //             //abrir url
-    //             Application.OpenURL("https://drive.google.com/file/d/1-Lgiuo6hlDQ4vBB_3WbRWM67QTL_B2-D/view?usp=sharing");
-    //         }
-    //         else
-    //         {
-    //             inputTerms.transform.DOShakeRotation(.5f, 30, 10, 30, true);
-    //             inputTerms.text = "";
-    //         }
-    //     }
-    // }
+    public void CheckTerms(GameObject game)
+    {
+        if (inputTerms.text != "")
+        {
+            int valortotal = int.Parse(txts[0].text) + int.Parse(txts[1].text);
+            
+            if (int.Parse(inputTerms.text) == valortotal)
+            {
+                game.SetActive(false);
+                mainPlaca.gameObject.SetActive(true);
+                inputTerms.text = "";
+                //abrir url
+                Application.OpenURL("https://cdaprender.blogspot.com/2023/01/privacy-policy-para-idioma-em-portugues.html");
+
+            }
+            else
+            {
+                inputTerms.text = "";
+                inputTerms.transform.DOShakeRotation(.5f, 30, 10, 30, true).OnComplete(() =>
+                {
+
+                });
+            }
+        }
+        else
+        {
+            inputTerms.transform.DOShakeRotation(.5f, 30, 10, 30, true);
+            inputTerms.text = "";
+        }
+        GenerateTerms();
+    }
 }
